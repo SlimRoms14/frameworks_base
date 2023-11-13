@@ -176,7 +176,7 @@ bool IsAndroidPackageName(StringPiece str) {
   if (str.size() > kMaxPackageNameSize) {
     return false;
   }
-  return IsAndroidNameImpl(str) > 1 || str == "android";
+  return IsAndroidNameImpl(str) > 1 || str == "android" || str == "slim";
 }
 
 bool IsAndroidSharedUserId(android::StringPiece package_name, android::StringPiece shared_user_id) {
